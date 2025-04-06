@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body style="background-color: #222; color: white; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column ; color: black;  ">
+<div style="border: 5px solid rgb(16, 16, 16); padding: 20px; border-radius: 10px; text-align: center;background-color: rgba(254, 254, 254, 0.816);">
+    <h1 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); font-weight: 300; font-size: 2.5rem; color: #333;">User Email ID</h1>
+   <div style="text-align: center; font-weight: 200; font-size: larger;">USERNAME:- <input type="email" name="username" id="username"></div><br>
+   <div style="text-align: center; font-weight: 200; font-size: larger;">Password:- <input type="password" name="Password" id="password"></div><br>
+   <div style="margin-left: 850px;"><input type="submit" value="Submit" id="submit"></div></div>
+    <script>
+        var username = document.getElementById("username");
+        var password = document.getElementById("password");
+        var submit = document.getElementById("submit");
+        alert("Please enter your email and password to proceed.");
+        submit.addEventListener("click", function(){
+            if(username.value===""&& password.value===""){
+                alert("Please enter your details.");
+            }
+            else if(username.value===""){
+                alert("Please Enter your email ID.");
+            }
+            else if(password.value===""){
+                alert("Please Enter your password.");
+            }
+            else {
+                alert("Login Successful.");
+            }
+        });
+    </script>
+        
+</body>
+</html>
